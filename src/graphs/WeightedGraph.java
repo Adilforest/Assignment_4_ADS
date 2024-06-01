@@ -32,7 +32,7 @@ public class WeightedGraph<VertexData> {
 
         if (hasEdge(source, dest)
                 || source.equals(dest))
-            return; // reject parallels & self-loops
+            return;
 
         Vertex<VertexData> sV = map.get(source);
         Vertex<VertexData> dV = map.get(dest);
